@@ -14,12 +14,12 @@ dependencies:
   '@studio-freight/hamo':
     specifier: ^0.6.19
     version: 0.6.19(react-dom@18.2.0)(react@18.2.0)
-  '@studio-freight/react-lenis':
-    specifier: 0.0.28
-    version: 0.0.28(react-dom@18.2.0)(react@18.2.0)
   '@studio-freight/tempus':
     specifier: ^0.0.38
     version: 0.0.38
+  '@szhsin/react-accordion':
+    specifier: ^1.2.3
+    version: 1.2.3(react-dom@18.2.0)(react@18.2.0)
   '@theatre/core':
     specifier: ^0.7.0
     version: 0.7.0
@@ -47,6 +47,9 @@ dependencies:
   react:
     specifier: 18.2.0
     version: 18.2.0
+  react-accessible-accordion:
+    specifier: ^5.0.0
+    version: 5.0.0(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
@@ -1658,8 +1661,8 @@ packages:
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
-      react: 18.2.0
-      react-dom: 18.2.0
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -1718,7 +1721,7 @@ packages:
     resolution: {integrity: sha512-ebbrdFoYTcuZ0v4wG5tedGnp9tzcV8awzsxYph7gXUyvnNLuTIcCk1q17JEbnVhXAKG9oX3KtchwiMIAYp9NLg==}
     peerDependencies:
       '@types/react': '*'
-      react: 18.2.0
+      react: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -1967,7 +1970,7 @@ packages:
     resolution: {integrity: sha512-Svl5GY5FQeN758fWKrjM6Qb7asvXeiZltlT4U2gVfl8Gx5UAv2sMR0LWo8yhsIZh2oQ0eFdZ59aoOOMV7b47VA==}
     peerDependencies:
       '@types/react': '*'
-      react: 18.2.0
+      react: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -2185,7 +2188,7 @@ packages:
       '@radix-ui/react-accordion': 1.1.2(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-select': 1.2.2(react-dom@18.2.0)(react@18.2.0)
       '@studio-freight/hamo': 0.6.19(react-dom@18.2.0)(react@18.2.0)
-      '@studio-freight/react-lenis': 0.0.28(react-dom@18.2.0)(react@18.2.0)
+      '@studio-freight/react-lenis': 0.0.36(react-dom@18.2.0)(react@18.2.0)
       clsx: 2.0.0
       embla-carousel-autoplay: 7.1.0
       embla-carousel-react: 7.1.0(react@18.2.0)
@@ -2195,7 +2198,7 @@ packages:
       next-seo: 6.1.0(next@13.4.19)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.66.1
+      sass: 1.68.0
       stats.js: 0.17.0
     transitivePeerDependencies:
       - '@types/react'
@@ -2217,18 +2220,19 @@ packages:
       throttle-debounce: 5.0.0
     dev: false
 
-  /@studio-freight/lenis@1.0.22:
-    resolution: {integrity: sha512-CU4VT2rZjrpp4bSqpIYe+qA4vK0yZeIl2lM0tcU5mX5k03smhCAAiDiLjgXJ1mrU9za6cU0O8C69zTOVbSBpwg==}
+  /@studio-freight/lenis@1.0.26:
+    resolution: {integrity: sha512-PLpPMtYoo50Z1otpUpGONK/BkJ0nrE7pY6Q1+KMWuPup+S+XFR/FJOXGkrtISzc6DtHgilbi1b6xDgDluFHsaA==}
     dev: false
 
-  /@studio-freight/react-lenis@0.0.28(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-g4xbf3ryHkh7jsJcfW6K2bizIdJvwmnv9TGAjsj8sQEDZv7vX9gNBxp63J/2RZa3xFuT576x1Aw0cwA+TAPKoQ==}
+  /@studio-freight/react-lenis@0.0.36(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-BuwckWT8U96tILfrm2y3Q8cr1gXk2ITnpm3Q+aP7x/Ah/U+Bt2hJtjZqEJfnTAGhGLqTlhuk7YoX3/PYf/RNqQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
       '@studio-freight/hamo': 0.6.19(react-dom@18.2.0)(react@18.2.0)
-      '@studio-freight/lenis': 1.0.22
+      '@studio-freight/lenis': 1.0.26
+      clsx: 2.0.0
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2408,6 +2412,17 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@szhsin/react-accordion@1.2.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-KsDmaYsv4+Rnla+fSdZMIMonzuvXlDRPaFeIa7Je0dnwY4iFry5eiw27GQ6276+tYkVRgUyfS/mEcL48efSivA==}
+    peerDependencies:
+      react: ^16.14 || ^17.0 || ^18.0
+      react-dom: ^16.14 || ^17.0 || ^18.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-transition-state: 2.1.1(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@theatre/core@0.7.0:
@@ -3087,7 +3102,7 @@ packages:
     engines: {node: '>=4.0.0'}
 
   /concat-map@0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
@@ -5179,6 +5194,16 @@ packages:
       safe-buffer: 5.2.1
     dev: false
 
+  /react-accessible-accordion@5.0.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MT2obYpTgLIIfPr9d7hEyvPB5rg8uJcHpgA83JSRlEUHvzH48+8HJPvzSs+nM+XprTugDgLfhozO5qyJpBvYRQ==}
+    peerDependencies:
+      react: ^16.3.2 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.3.3 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -5239,6 +5264,16 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.6.2
+    dev: false
+
+  /react-transition-state@2.1.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-kQx5g1FVu9knoz1T1WkapjUgFz08qQ/g1OmuWGi3/AoEFfS0kStxrPlZx81urjCXdz2d+1DqLpU6TyLW/Ro04Q==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
@@ -5425,6 +5460,16 @@ packages:
 
   /sass@1.66.1:
     resolution: {integrity: sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.2
+      source-map-js: 1.0.2
+    dev: false
+
+  /sass@1.68.0:
+    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:

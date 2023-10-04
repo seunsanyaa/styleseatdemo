@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+  width: 100%;
+  .videoDiv {
+    height: 20rem;
+    background-image: url('https://dsifg2gm0y83d.cloudfront.net/bundles/assets/images/nails_2021_hp_tile.6f41dfbf91ad7a7d152b.png');
+
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // border-radius: 0.5rem;
+    }
+
+    .playDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 1rem;
+      font-family: 'system-ui';
+      font-size: 1rem;
+      font-weight: 400;
+      color: white;
+      .play {
+        background: gray;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .textDiv {
+    padding: 1rem;
+    .head {
+      padding-bottom: 0.2rem;
+      font-family: 'system-ui';
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .paragraph {
+      font-family: 'system-ui';
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: center;
+
+      .blue {
+        color: #2ca7cb;
+      }
+    }
+  }
+  .type {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      text-transform: capitalize;
+      font-family: 'system-ui';
+      font-size: 1.2rem;
+      text-align: center;
+
+      padding: 1rem;
+    }
+  }
+}

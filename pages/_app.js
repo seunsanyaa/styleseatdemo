@@ -11,6 +11,7 @@ import { ProjectProvider, RafDriverProvider } from 'libs/theatre'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import 'styles/global.scss'
+import 'react-accessible-accordion/dist/fancy-example.css'
 
 if (typeof window !== 'undefined') {
   // reset scroll position

@@ -1,0 +1,67 @@
+.container {
+  background-image: url('https://res.cloudinary.com/seunsanyaa/image/upload/v1696399536/homepage_banner_desktop.bbe277e6004165e8db3a_gh3pjt.jpg');
+  // background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 320px;
+  background-size: cover;
+  height: 28rem;
+  background-color: #ebebeb;
+
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  h2 {
+    font-family: 'system-ui';
+    font-size: 1.5rem;
+
+    max-width: 70%;
+    line-height: 120%;
+    padding-bottom: 1rem;
+  }
+  .forms {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'system-ui';
+
+    .inputDiv {
+      background-color: white;
+      border: 1px solid grey;
+      padding: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+
+      font-family: 'system-ui';
+
+      font-size: 0.9rem;
+
+      ::placeholder {
+        color: grey;
+      }
+    }
+
+    .search {
+      background: black;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  span {
+    color: rgb(115, 112, 86);
+  }
+}

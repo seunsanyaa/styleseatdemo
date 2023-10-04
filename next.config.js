@@ -26,7 +26,12 @@ const nextConfig = {
     legacyBrowsers: false,
     // storyblok preview
     nextScriptWorkers: process.env.NODE_ENV !== 'development',
-    urlImports: ['https://cdn.skypack.dev', 'https://unpkg.com'],
+    urlImports: [
+      'https://cdn.skypack.dev',
+      'https://unpkg.com',
+      'https://res.cloudinary.com',
+      'https://dsifg2gm0y83d.cloudfront.net',
+    ],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV !== 'development',
@@ -35,7 +40,11 @@ const nextConfig = {
     // ADD in case you need to import SVGs in next/image component
     // dangerouslyAllowSVG: true,
     // contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    domains: ['assets.studiofreight.com'],
+    domains: [
+      'assets.studiofreight.com',
+      'res.cloudinary.com',
+      'dsifg2gm0y83d.cloudfront.net',
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   sassOptions: {

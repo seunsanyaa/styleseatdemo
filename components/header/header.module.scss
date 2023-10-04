@@ -1,7 +1,7 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   z-index: 1;
   // color: var(--white);
@@ -9,7 +9,7 @@
   padding: mobile-vw(20px) 0;
 
   @include desktop {
-    padding: desktop-vw(40px) 0;
+    padding: desktop-vw(15px) 0;
   }
 
   .head {
@@ -17,5 +17,39 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
+  }
+
+  .logo {
+    svg {
+      width: 10rem;
+      height: 4rem;
+    }
+  }
+
+  .right {
+    font-family: 'system-ui';
+
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    span {
+      font-size: 1.1rem;
+    }
+    .grey {
+      color: rgb(115, 112, 86);
+    }
+
+    .button {
+      background: #fcf1f2;
+      padding: 0.5rem;
+      border-radius: 3rem;
+
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      span {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
