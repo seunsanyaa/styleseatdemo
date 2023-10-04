@@ -88,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className={s.find}>Meet StyleSeat Pros</div>
-        <div className={s.cardDiv}>
+        <div className={s.videoDiv}>
           <Video />
           <Video />
           <Video />

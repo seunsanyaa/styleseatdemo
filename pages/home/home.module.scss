@@ -19,8 +19,11 @@
   font-size: 1.5rem;
 }
 .cardDiv {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
   gap: 1.5rem;
   padding: 0rem 1rem;
   padding-bottom: 2.5rem;
@@ -115,4 +118,11 @@
   div {
     background-color: white;
   }
+}
+.videoDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
 }
